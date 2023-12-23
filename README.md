@@ -66,3 +66,12 @@ LoanXpress has a nice UI look. It looks like a Windows OS system. See below
 **Opening bank account:** 
 
 ![client2](https://github.com/smwithgithub/LoanXpress/assets/126904136/63a76efe-e2cd-4b4d-8667-85be9c16400d)
+
+
+
+##Database
+Here, I use Microsoft SQL Server as the database. Most of the logic is implemented in stored procedures in SQL Server using T-SQL. See below for the database diagram.
+
+**Diagram:**
+
+![database_diagram](https://github.com/smwithgithub/LoanXpress/assets/126904136/579ac1ad-928c-4f2b-92b3-059ece5bcdeb)
