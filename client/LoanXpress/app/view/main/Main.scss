@@ -1,0 +1,304 @@
+/*
+ * This file contains styling for the Main view.
+ */
+
+/*
+ * Generates a set of style rules for the "navigation" tab UI.
+ *
+ * @author  S.M.Shamim
+ *
+ */
+ @include extjs-tab-panel-ui(
+    $ui: 'navigation',
+    $ui-tab-background-color: transparent,
+    $ui-tab-background-color-over: #636262,
+    $ui-tab-background-color-active: #303030,
+    $ui-tab-background-gradient: 'none',
+    $ui-tab-background-gradient-over: 'none',
+    $ui-tab-background-gradient-active: 'none',
+    $ui-tab-color: #acacac,
+    $ui-tab-color-over: #c4c4c4,
+    $ui-tab-color-active: #fff,
+    $ui-tab-glyph-color: #acacac,
+    $ui-tab-glyph-color-over: #c4c4c4,
+    $ui-tab-glyph-color-active: #fff,
+    $ui-tab-glyph-opacity: 1,
+    $ui-tab-border-radius: 0,
+    $ui-tab-border-width: 0,
+    $ui-tab-inner-border-width: 0,
+    $ui-tab-padding: 8px,
+    $ui-tab-margin: 0,
+    $ui-tab-font-size: 10px,
+    $ui-tab-font-size-over: 10px,
+    $ui-tab-font-size-active: 10px,
+    $ui-tab-line-height: 10px,
+    $ui-tab-font-weight: normal,
+    $ui-tab-font-weight-over: bold,
+    $ui-tab-font-weight-active: bold,
+    $ui-tab-icon-width: 12px,
+    $ui-tab-icon-height: 12px,
+    $ui-tab-icon-spacing: 10px,
+    $ui-bar-background-color: #363636,
+    $ui-bar-background-gradient: 'none',
+    $ui-bar-padding: 0,
+    $ui-strip-height: 0
+);
+
+/*
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+@include extjs-panel-ui(
+    $ui: 'navigation',
+    $ui-header-color: #fff,
+    $ui-header-glyph-color: #fff,
+    $ui-header-glyph-opacity: 1,
+    $ui-header-font-size: 15px,
+    $ui-header-line-height: 10px,
+    $ui-header-font-weight: bold,
+    $ui-header-icon-height: 24px,
+    $ui-header-icon-width: 24px,
+    $ui-header-icon-spacing: 10px,
+    $ui-header-background-color: $base-color,
+    $ui-header-padding: 0,
+    $ui-header-text-margin: 15px,
+    $ui-header-noborder-adjust: false,
+);
+
+
+.x-title-icon-navigation {
+    font-family: 'Font Awesome 5 Free';
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.x-tab-icon-el-navigation {
+    font-family: 'Font Awesome 5 Free';
+    color: #acacac;
+
+    .x-tab-over & {
+        color: #c4c4c4;
+    }
+
+    .x-tab-active & {
+        color: #fff;
+    }
+}
+
+.x-panel-header-title-navigation > .x-title-text-navigation:after {
+    top: 30px;
+    right: -24px;
+}
+
+// <new modified for desktop==================================================================================================
+.x-btn-inner-default-small {
+    font: 400 16px/18px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #ffffff;
+    padding: 0 5px;
+    max-width: 100%;
+}
+// =======login button===========================
+#loginButton .x-btn-inner-default-small {
+    font: 400 16px/18px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #000000;
+    padding: 0 5px;
+    max-width: 100%;
+}
+
+// =======signUpButton button===========================
+
+// login textfields===============================
+.username .x-form-item-label-default, .passwordField .x-form-item-label-default {
+    color: #d8d8d8;
+    font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    min-height: 32px;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+
+// checkbox===============================
+#loginCheckBox .x-form-cb-label-default {
+    margin-top: 8px;
+    font: 300 13px/17px
+px
+ 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #d4d4d4;
+}
+
+
+// ===========css for window==================================
+.x-window-header-default-top {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 14px 10px 14px;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    background-color: #0b092d;
+    border-color: transparent;
+}
+
+
+
+.x-window-default {
+    border-color: #181738;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    -ms-border-radius: 0 0 0 0;
+    -o-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+}
+
+.x-btn-default-small {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    padding: 7px 7px 7px 7px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #0b092d;
+    border-color: #181738;
+}
+
+// /* For hover state */
+// .x-btn-default-small:hover {
+//     background-color: #ff8c00; /* Change the background color on hover */
+//     border-color: #181738; /* Retain the border color on hover */
+// }
+
+// /* For active (clicked) state */
+// .x-btn-default-small:active {
+//     background-color: #ff6600 !important; /* Add !important to override other styles */
+//     border-color: #181738 !important; /* Add !important to override other styles */
+// }
+
+
+.x-window-header-default .x-tool-img {
+    background-color: transparent;
+}
+
+#button .x-btn-inner-default-small {
+    font: 400 16px/18px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #ffffff;
+    padding: 0 5px;
+    max-width: 100%;
+}
+
+#searchBtn .x-btn-inner-default-toolbar-small {
+    font: 400 12px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #ffffff;
+    padding: 0 5px;
+    max-width: 100%;
+}
+
+#searchField .x-form-text-default{
+    color: #ffffff;
+}
+
+//  ==============bbar css changing start======================
+.bbardesign {
+    background-color: #0b0a1d;
+    opacity: 90%;
+}
+
+.windowsbtn{
+    background-color: transparent;
+}
+
+.windowsbtn:hover {
+    background-color: #0c0a25;
+}
+
+.notification{
+    background-color: transparent;
+}
+
+.notification:hover {
+    background-color: #0c0a25; 
+} //  ==============bbar css changing ended======================
+
+
+// popup windows window
+#popupwindows .x-window-header-default {
+    font-size: 16px;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+#popupwindows .x-window-header-default-top {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 14px 10px 14px;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    background-color: transparent;
+  }
+
+#popupwindows .x-resizable-handle-over, .x-resizable-pinned .x-resizable-handle {
+    opacity: 0;
+}
+
+
+// ==========date and time css
+
+#dateTimeLabel {
+    color:#ffffff;
+}
+
+// new modified for desktop=================================================================================================/>
+
+
+// topbars style======
+.tbarOnLoan , .tbarOnClient, .tbarOnEmployee {
+    background-color: #1f1f1f;
+    opacity: 90%;
+}
+
+.homeloangrid .x-grid-cell, .homeloangrid .x-column-header, .homeloanemi .x-column-header, .homeloanemi .x-grid-cell {
+    font-weight: bold;
+}
+
+/* Apply the red asterisk (*) to mandatory form fields */
+.x-form-required-field::before {
+    content: ' *';
+    color: red;
+}
+
+
+.bankaccountform .x-panel-header-default,
+.bankaccountform .x-panel-header-title, 
+.loanapplicationform .x-panel-header-default,
+.loanapplicationform .x-panel-header-title {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    background-color: #bf6900; /* Set your desired background color */
+}
+
+// search bar trigger icon style change
+.custom-search-trigger {
+    background-color: #ededed; 
+}
+
