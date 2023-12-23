@@ -28,3 +28,10 @@ LoanXpress has a nice UI look. It looks like a Windows OS system. See below
 
 
 ![login page](https://github.com/smwithgithub/LoanXpress/assets/126904136/423748aa-75bb-4abd-ab6f-8b5e3e21d8f8)
+
+
+
+**Home page:** It has a fully Windows OS look.
+
+
+![home page](https://github.com/smwithgithub/LoanXpress/assets/126904136/1d097215-9719-48a8-8a8a-23c6d6a72436)
